@@ -1,0 +1,80 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Righteous', serif;
+  color: white;
+}
+html, body {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+html {
+  overflow-y: auto;
+}
+#temptext{
+    font-family: Patua+One;
+    text-align: center;
+}
+a{
+  text-decoration: none;
+}
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+#logo {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    height: 15%;
+    width: inherit;
+}
+nav {
+    position: relative;
+    margin-right: 1%;
+    margin-top: 3%;
+}
+menuitem {
+    position: inherit;
+    float: right;
+    width: 10%;
+}
+nav a p {
+    color: #ddd;
+    font-size: 18pt;
+    text-align: center;
+}
+nav a p:hover {
+    color: white;
+    font-size: 20pt;
+    text-decoration: underline;
+}
+main {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    height: 85%;
+    width: 90%;
+}
+button{
+    border: 2px solid #ddd;
+    padding: 5px;
+    margin: 10px;
+    color: #ddd;
+    font-size: 16pt;
+    background-color: transparent;
+}
+button:hover{
+    border: 3px solid #fff;
+    padding: 5px;
+    margin: 9px;
+    color: #fff;
+}
