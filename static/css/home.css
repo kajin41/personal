@@ -23,3 +23,8 @@ main article p {
 main article button{
     float: right;
 }
+footer{
+    position: absolute;
+    top: 80%;
+    height: 20%;
+}

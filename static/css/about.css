@@ -1,0 +1,56 @@
+.cover{
+  position: relative;
+  top: -30%;
+  left: -6%;
+  width: 112%;
+  z-index: -1;
+}
+#headline{
+    position: absolute;
+    font-size: 50pt;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    left: calc(50% - 163px);
+    top: 25%;
+}
+#down{
+  position: absolute;
+  height: 5%;
+  left: 50%;
+  top: 60%
+}
+#bg{
+  filter: brightness(200%);
+}
+menu{
+  position: relative;
+  top: -31%;
+  background-color: #fff;
+  opacity: .9;
+  height: 1%;
+}
+menu menuitem.tab{
+  background-color: #fff;
+  width: 19.8%;
+  float: left;
+  margin-right: .25%;
+  border-bottom-left-radius: 3%;
+  border-bottom-right-radius: 3%;
+}
+menu menuitem.tab:hover{
+  background-color: #ccc;
+}
+menu menuitem#camera{
+  margin-right: 0%;
+
+}
+menu menuitem img{
+  width: 100%
+}
+article.info{
+  display: none;
+  float: left;
+  background-color: white;
+  color: #333;
+  width: 100%;
+  height: 5000%;
+}

@@ -2,9 +2,36 @@
 <html lang="en">
 {% extends "nav.html" %}
 {% block content %}
-    <link rel="stylesheet" type="text/css" href="/static/css/home.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/about.css">
+    <script src="/static/js/about.js"></script>
 <main>
-    <h1 id="temptext">Under Development...</h1>
+    <h1 id="headline">What I Do</h1>
+    <img src="/static/images/about/fire.jpg" class="cover">
+    <a href="#tabs"><img src="/static/images/drop_arrow.png" id="down"></a>
+
+    <menu id="tabs">
+        <menuitem id="scouts" class="tab">
+            <img src="/static/images/about/scout.png">
+        </menuitem>
+        <menuitem id="apo" class="tab">
+            <img src="/static/images/about/apo.png">
+        </menuitem>
+        <menuitem id="music" class="tab">
+            <img src="/static/images/about/music.png">
+        </menuitem>
+        <menuitem id="computer" class="tab">
+            <img src="/static/images/about/computer.png">
+        </menuitem>
+        <menuitem id="camera" class="tab">
+            <img src="/static/images/about/camera.png">
+        </menuitem>
+        <article id="scouts_info" class="info">Scouts</article>
+        <article id="apo_info" class="info">APO</article>
+        <article id="music_info" class="info">Music</article>
+        <article id="computer_info" class="info">Computer</article>
+        <article id="camera_info" class="info">Camera</article>
+    </menu>
+
 </main>
 {% endblock %}
 </html>
