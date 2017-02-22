@@ -3,23 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
     <title>{{ title }}</title>
     <link rel="icon" href="static/images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="/static/css/base.css">
     <link href='https://fonts.googleapis.com/css?family=Patua+One|Poiret+One|Righteous' rel='stylesheet' type='text/css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/freelancer.css">
+    <link href="/static/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body>
-    <img src="static/images/gray.png" id="bg" alt="">
-    <img src="static/images/logowhite.png" id="logo">
-    <nav>
-        <menuitem><a href="/contact"><p>Contact</p></a></menuitem>
-        <menuitem><a href="/resume"><p>Resume</p></a></menuitem>
-        <menuitem><a href="/portfolio"><p>Portfolio</p></a></menuitem>
-        <menuitem><a href="/about"><p>About</p></a></menuitem>
-        <menuitem><a href="/"><p>Home</p></a></menuitem>
-    </nav>
+<body id="page-top" class="index">
+
+ <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+        </button>
+        <img src="/static/images/logowhite.png" class="navbar-brand"><a class="navbar-brand" href="#page-top"> Gregory Mercado</a>
+    </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right">
+        <li class="hidden"><a href="/"><p>Home</p></a></li>
+        <li class="page-scroll"><a href="#about"><p>About</p></a></li>
+        <li class="page-scroll"><a href="#experience"><p>Experience</p></a></li>
+        <li class="page-scroll"><a href="#skills"><p>Skills</p></a></li>
+        <li class="page-scroll"><a href="#contact"><p>Contact</p></a></li>
+    </ul>
+      </div>
+  </div>
+</nav>
+
 {% block content %}{% endblock %}
+ <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="/static/js/freelancer.js"></script>
 </body>
 </html>

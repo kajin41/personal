@@ -1,0 +1,99 @@
+html, body{
+    height: 100%;
+}
+header {
+    background-image: url("/static/images/bg.jpg");
+    background-size: 100%;
+    height: 60%;
+    width: 100%;
+    padding: 0;
+}
+
+header div {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20,200,20,.3);
+}
+h1{
+    text-align: center;
+    font-size: 35pt;
+    background-color: darkgreen;
+    color: white;
+    border-radius: .25em;
+    padding: .2em;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+nav{
+    position: fixed;
+    background: #333333;
+    border-radius: .25em;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    min-width: 33em;
+}
+nav a {
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    padding: .3em 1em;
+    border-right: solid 2px darkgreen;
+    display: inline-block;
+}
+nav a.last{
+    border-right: none;
+}
+#About {
+    height: auto;
+    background: #dddddd;
+}
+
+#About #prof{
+    max-width: 30%;
+
+}
+#About #prof img{
+    border-radius: 50%;
+}
+#About #prof h2{
+    margin-left: 20%;
+    max-width: 60%;
+    min-width: 8em;
+    background-color: darkgreen;
+    color: white;
+    border-radius: .25em;
+    padding: .2em;
+}
+#bio{
+    display: table-row;
+    position: absolute;
+    float: left;
+    max-width: 30%;
+    min-width: 15em;
+    margin-top: -15%;
+
+}
+#spec{
+    display: table-row;
+    position: relative;
+    float: right;
+    max-width: 30%;
+    text-align: right;
+    margin-top: -15%;
+}
+
+
+
+#experience{
+
+}
+
+.left-heading{
+    background-color: darkgreen;
+    color: white;
+    border-radius: .25em;
+    padding: .2em;
+
+}
+
