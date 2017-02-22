@@ -44,7 +44,7 @@ def contact():
         msg.html = request.form['message']
         with app.app_context():
             mail.send(msg)
-        return redirect('/')
+        return 'message sent'
 
 
 if __name__ == '__main__':
