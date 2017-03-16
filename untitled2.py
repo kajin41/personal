@@ -36,6 +36,7 @@ def contact():
     if request.method == 'GET':
         return render_template("contact.html", title="Contact")
     else:
+
         msg = Message(
             request.form['subject'],
             sender=(request.form['name'], config.MAIL_USERNAME),
