@@ -44,11 +44,10 @@
     </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav navbar-right">
-        <li class="hidden"><a href="/"><p>Home</p></a></li>
-        <li class="page-scroll"><a href="#about"><p>About</p></a></li>
-        <li class="page-scroll"><a href="#experience"><p>Experience</p></a></li>
-        <li class="page-scroll"><a href="#skills"><p>Skills</p></a></li>
-        <li class="page-scroll"><a href="#contact"><p>Contact</p></a></li>
+        <li class="hidden"><a href="#top"><p>home</p></a></li>
+        {% for nav_item in nav_items %}
+        <li class="page-scroll"><a href="#{{ nav_item }}"><p>{{ nav_item }}</p></a></li>
+        {% endfor %}
     </ul>
       </div>
   </div>

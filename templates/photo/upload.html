@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+{% extends "nav.html" %}
+{% block content %}
+    <div class="container">
+    <form>
+        <span>
+            <label>Username
+            <input type="text" name="username">
+            </label>
+        </span>
+        <span>
+            <label>Password
+            <input type="password" name="password">
+            </label>
+        </span>
+        <span>
+            <label>Album Name
+            <input type="text" name="album_name">
+            </label>
+        </span>
+        <span>
+            <label>Category
+            <select name="category">
+                {% for category in categories %}
+                <option value="{{ category }}">{{ category }}</option>
+                {% endfor %}
+            </select>
+            </label>
+        </span>
+    </form>
+    </div>
+
+{% endblock %}
+</body>
+</html>

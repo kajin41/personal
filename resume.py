@@ -12,23 +12,12 @@ app.config['MAIL_USERNAME'] = config.MAIL_USERNAME
 app.config['MAIL_PASSWORD'] = config.MAIL_PASSWORD
 
 mail = Mail(app)
+nav_items = ['about', 'experience', 'skills', 'contact']
 
 
 @app.route('/')
 def index():
-    return render_template("home3.html", title="Gregory Mercado")
-
-@app.route('/about')
-def about():
-    return render_template("about.html", title="About")
-
-@app.route('/portfolio')
-def portfolio():
-    return render_template("portfolio.html", title="Portfolio")
-
-@app.route('/resume')
-def resume():
-    return render_template("resume.html", title="Resume")
+    return render_template("home3.html", title="Gregory Mercado", nav_items=nav_items)
 
 
 @app.route('/contact', methods=['GET', 'POST'])
@@ -42,11 +31,11 @@ def contact():
             sender=(request.form['name'], config.MAIL_USERNAME),
             recipients=config.ADMINS,
             reply_to=request.form['email'])
-        msg.html = request.form['message']
+        msg.html = request.form['message'] + request.remote_addr
         with app.app_context():
             mail.send(msg)
         return 'message sent'
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')
