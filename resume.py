@@ -31,11 +31,11 @@ def contact():
             sender=(request.form['name'], config.MAIL_USERNAME),
             recipients=config.ADMINS,
             reply_to=request.form['email'])
-        msg.html = request.form['message'] + request.remote_addr
+        msg.html = request.form['message'] + request.headers['X-Forwarded-For']
         with app.app_context():
             mail.send(msg)
         return 'message sent'
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run()
