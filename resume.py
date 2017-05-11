@@ -25,6 +25,11 @@ def contact():
     if request.method == 'GET':
         return render_template("contact.html", title="Contact")
     else:
+        try:
+            if int('0x' + request.form['name'], 16) > 0x5914b52de6c50:
+                return 400
+        except ValueError:
+            pass
 
         msg = Message(
             request.form['subject'],
